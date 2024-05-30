@@ -29,23 +29,25 @@
             <div class="container">
                 <h2><center>Research</center></h2>
                 <h3>PhD research</h3>
-                <h4>Anharmonic materials for energy applications</h4>
-                <p>The main research topic in my PhD is to characterize the structural, optoelectronic, and thermal properties of
-                    chalcohalide anti-perovskites. These are materials that are being poorly studied and that are expected to be interesting
-                    for energy applications, due their optoelectronic and thermoelectric properties. These materials present important electron-phonon and phonon-phonon interactions, arising interesting physical behaviour such as structural stabilization with temperature or massive band gap decreasing. 
+                <h4>Materials modelling for energy and optoelectronic applications</h4>
+                <p>The main research topic in my PhD is to characterize the structural and optoelectronic properties of novel semiconductor materials, such as chalcohalide anti-perovskites. To achieve this, I use first-principles computational methods, like Density Functional Theory (DFT) and ab-initio Molecular Dynamics simulations. These methods allow for the computation of fundamental properties of solid-state crystal systems with a high level of accuracy and agreement with experiments. Some of the properties that  first-principles methods can determine include (but are not limited to) lattice parameters, phonon computations and thermodynamics properties, electronic structure, and optical properties of the system. <br> 
+                The studied materials are expected to be promising candidates for use in energy and optoelectronic applications, such as  photovoltaics, solid-state batteries, or neuromorphic computing. Consequently, they may contribute to the transition to a more sustainable and decarbonized future.    
                 </p>
-                <img src="images/anharmonic-research.png" alt="Some pictures of the PhD research" width=700 class="imageresearch">
+                <h4>Electron-phonon coupling effects in optoelectronic properties</h4>
+                <p>DFT formalism works at zero temperature, but this is usually sufficient to correctly predict the optoelectronic properties of condensed matter systems. However, some systems exhibit strong electron-phonon interactions, necessitating the consideration of thermal effects of the lattice to accurately model the optoelectronic properties of such systems. This is the case with chalohalide anti-perovskite materials, for which we have verified a strong dependence of the band gap and dielectric tensor on temperature, exhibiting a significant decrease in band gap with increasing temperature. <br>
+                Other systems with similar properties have been explored to find materials with large temperature renormalization effects, identifying different perovskite-like systems.  
+                </p>
                 <h4>Crystal structure prediction with ML interatomic potentials</h4>
                 <p>The structure of the unit cell in crystal materials and the type of ions present in this unit cell fully determines
-                    the physical and chemical properties of a given material. Thus, we were interested in be able to find crystal structures
-                    for a given chemical compounds and stoichiometry with ab-ininio methods, what is called Crystal Structure Prediction (CSP). 
-                    However this is a complicated problem, and despite there are different methodologies for CSP, they usually
-                    take long frames of time and need to be executed in supercomputer facilities.<br>
-                    PyMCSP implements machine learning interatomic potentials and random search algorithms, in order
-                    to be able to find good structure candidates in small frames of time and in a personal computer.<br>
+                    the physical and chemical properties of a given material. Thus, correctly predicting the crystal phases of materials is of utmost importance. Crystal Structure Prediction methods emerged to find stable and metastable phases of a given material using first-principles methods. However, these methods often rely on expensive DFT computations and face the challenge of efficiently exploring the energy (or Gibbs energy, when accounting for pressure and temperature) hypersurface, due to its large dimensionality and irregular morphology.<br>
+                    To find the minima of the energy hypersurface, we propose using a random search algorithm along with ionic relaxations using machine learning interatomic potentials. We developed PyMCSP (Python and Machine learning Crystal Structure Prediction) as a user-friendly software to find stable and metastable phases of materials. Additionally, the program can also search for high-pressure phases and perform phase prediction from X-ray and neutron diffraction experimental results.<br>
                 The github repository to PyMCSP code can be found 
                 <b><u><a href="https://github.com/polbeni/PyMCSP" style="color:black; text-decoration:none;">here</a></u></b>.</p>
                 <img src="images/csp-research.png" alt="Schematic representation of PyMCSP" width=700 class="imageresearch">
+                <h4>Crystal Graph Neural Networks for materials property prediction</h4>
+                <p>Crystal Graph Neural Networks (CGNNs) emerged a few years ago as the leading machine learning method for predicting the properties of solid-state systems. In CGNNs, the unit cell information of a crystal system is mapped to a graph that also accounts for the crystal's periodicity.<br> 
+                We have developed CGNN models to predict band gaps and thermal effects on band gaps, thereby avoiding expensive DFT calculations. This approach also makes it possible to computationally study solid solution systems.
+                </p>
                 <h3>Previous research</h3>
                 <nav>
                     <ul>
