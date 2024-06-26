@@ -18,7 +18,25 @@ header h1 {
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 0px;
+}
+
+/* Remove bottom margin from <h4> */
+.no-margin-bottom {
+  margin-bottom: -40px;
+}
+
+.year-heading {
+  margin-top: -20px;
+  margin-bottom: -40px;
+}
+.year-heading2 {
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+
+ul.padded {
+  padding: 40px;
 }
 
 .navheader ul li {
