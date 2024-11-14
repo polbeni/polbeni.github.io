@@ -129,3 +129,34 @@ img {
 .text-container-image {
   flex: 1; /* Allow the text container to grow and occupy remaining space */
 }
+
+/* Experience and Education Section Styles */
+.experience-list ul,
+.education-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-list li,
+.education-list li {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 15px;
+    gap: 10px; /* Space between logo and text */
+}
+
+.experience-logo,
+.education-logo {
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.experience-list span,
+.education-list span {
+    display: block;
+    line-height: 1.4;
+    width: 100%; /* Ensure text takes the full width */
+}
