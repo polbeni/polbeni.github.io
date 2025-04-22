@@ -29,28 +29,43 @@
             <div class="container">
                 <h2><center>Research</center></h2>
                 <h3>PhD research</h3>
-                <h4>Materials modelling for energy and optoelectronic applications</h4>
-                <p>The main research topic in my PhD is to characterize the structural and optoelectronic properties of novel semiconductor materials, such as chalcohalide anti-perovskites. To achieve this, I use first-principles computational methods, like Density Functional Theory (DFT) and ab-initio Molecular Dynamics simulations. These methods allow for the computation of fundamental properties of solid-state crystal systems with a high level of accuracy and agreement with experiments. Some of the properties that  first-principles methods can determine include (but are not limited to) lattice parameters, phonon computations and thermodynamics properties, electronic structure, and optical properties of the system. <br> 
-                The studied materials are expected to be promising candidates for use in energy and optoelectronic applications, such as  photovoltaics, photocatalysis, thermoelectricity, solid-state batteries, and neuromorphic computing, among others. Consequently, they may contribute to the transition to a more sustainable and decarbonized future.    
+                <h4>Materials Modelling for Energy and Optoelectronic Applications</h4>
+                <p>To characterize the structural and optoelectronic properties of materials, we employ first-principles computational methods such as Density Functional Theory (DFT) and ab initio Molecular Dynamics. These techniques enable the accurate prediction of fundamental properties in solid-state crystal systems, often in close agreement with experimental results.<br>
+                Our research focuses on exploring novel families of semiconductor materials, including chalcohalide antiperovskites, which show great promise for energy and optoelectronic applications, such as in photovoltaics. <br>
+                    
+                Understanding and developing these materials may ultimately contribute to technologies that support the transition toward a more sustainable and decarbonized future. 
                 </p>
     
-                <h4>Electron-phonon coupling effects in optoelectronic properties</h4>
-                <p>DFT formalism operates at zero temperature, but it is generally sufficient for correctly predicting the optoelectronic properties of condensed matter systems. However, some systems exhibit strong electron-phonon interactions, making it necessary to consider the thermal effects of the lattice to accurately model the optoelectronic properties of these systems. This is the case with chalcohalide anti-perovskite materials, where we have observed a strong dependence of the band gap and dielectric tensor on temperature, with a significant decrease in the band gap as temperature increases. <br>
-                A screening of various materials was conducted to identify other systems with similarly large temperature-dependent renormalization effects, leading to the identification of several perovskite-like systems. However, in these systems, an increase in the band gap with rising temperature was observed. <br> 
-                The differing effects of temperature on the electronic bands are successfully explained in terms of the overlap of different electronic orbitals near the valence and conduction bands. 
+                <h4>Electron-Phonon Coupling Effects in Anharmonic Semiconductor Optoelectronics</h4>
+                <p>While Density Functional Theory (DFT) is formulated at zero temperature, it is generally sufficient for accurately predicting the optoelectronic properties of many condensed matter systems. However, in materials with strong electron-phonon interactions, thermal lattice effects must be taken into account to achieve reliable results.<br>
+
+                This challenge becomes even more pronounced in anharmonic materials, where the standard harmonic approximation of phonons breaks down, necessitating the use of more advanced and computationally intensive methodologies.<br>
+                    
+                To address this, we use a combined DFT and ab initio molecular dynamics (DFT-MD) approach to compute electron-phonon corrections to the optoelectronic properties of semiconductors. Using this method, we have predicted a significant band gap reduction in chalcohalide antiperovskites, as well as notable band gap changes in other perovskite-like systems.
                 </p>
 
-                <h4>Crystal Graph Neural Networks for materials property prediction</h4>
-                <p>Convolutional Graph Neural Networks (CGNNs) have emerged in recent years as an effective machine learning method for predicting the properties of materials. These models are trained on graphs, a mathematical structure used to represent systems of data with relationships, such as social networks, images, or molecules. These graphs consist of nodes and edges, i.e., connections between nodes. Both nodes and edges can have various features. In this way, a material can be represented as a graph where the nodes represent atoms and the edges represent the distances between atoms (i.e., chemical bonds). By allowing more than one edge between the same pair of nodes, we can account for the periodicity of the unit cell. <br>
-                In our research, we are developing CGNN models to predict band gaps and thermal effects on band gaps, thus avoiding the need for expensive DFT calculations. This approach also enables the computational study of more complex systems, such as solid solutions.
+                <h4>High-Throughput Screening of Materials</h4>
+                <p>The emergence of large-scale materials databases, containing hundreds of thousands of compounds and their computed properties, has enabled high-throughput screening approaches for a wide range of applications.<br>
+
+                We leverage databases such as The Materials Project and PhononDB to identify materials with specific targeted properties. For example, we conduct screenings to discover compounds exhibiting strong anharmonicity, significant electron-phonon coupling, and pronounced band gap variations with temperature.
+                </p>
+
+                <h4>Crystal Graph Convolutional Neural Networks for Materials Property Prediction</h4>
+                <p>Crystal Graph Convolutional Neural Networks (CGCNNs) have recently emerged as powerful machine learning tools for predicting materials properties. These models operate on graphs, a mathematical structure used to represent data systems with relational connections, such as social networks, molecular structures, or crystalline materials. In this framework, graphs consist of nodes (representing atoms) and edges (representing interatomic distances or chemical bonds), each enriched with descriptive features.<br>
+
+                By allowing multiple edges between pairs of nodes, CGCNNs can effectively capture the periodic nature of crystal structures. This makes them particularly well-suited for modelling the complexities of solid-state materials.<br>
+                    
+                In our work, we develop CGCNN-based models to predict electronic band gaps and their thermal evolution, providing an efficient alternative to computationally expensive DFT calculations. This approach also opens the door to studying more complex systems, such as solid solutions, that are often challenging for traditional methods.
                 </p>
                 <img src="images/cgnn-research.png" alt="From unit cells to graphs, and CGNN model" width=700 class="imageresearch">
                 
-                <h4>Crystal structure prediction with ML interatomic potentials</h4>
-                <p>The structure of the unit cell in crystal materials and the type of ions present in this unit cell fully determines
-                    the physical and chemical properties of a given material. Thus, correctly predicting the crystal phases of materials is of utmost importance. Crystal Structure Prediction methods emerged to find stable and metastable phases of a given material using first-principles methods. However, these methods often rely on expensive DFT computations and face the challenge of efficiently exploring the energy (or Gibbs energy, when accounting for pressure and temperature) hypersurface, due to its large dimensionality and irregular morphology.<br>
-                    To find the minima of the energy hypersurface, we propose using a random search algorithm along with ionic relaxations using machine learning interatomic potentials. We developed PyMCSP (Python and Machine learning Crystal Structure Prediction) as a user-friendly software to find stable and metastable phases of materials. Additionally, the program can also search for high-pressure phases and perform phase prediction from X-ray and neutron diffraction experimental results.<br>
-                The github repository to PyMCSP code can be found 
+                <h4>Crystal Structure Prediction with Machine Learning Interatomic Potentials (MLIPs)</h4>
+                <p>The structure of the unit cell and the types of ions it contains fundamentally determine the physical and chemical properties of a crystalline material. Therefore, accurately predicting the crystal phases of materials is essential for understanding and designing new compounds.<br>
+
+                Crystal Structure Prediction (CSP) methods aim to identify stable and metastable phases of a material using first-principles calculations. However, these methods are typically computationally intensive due to their reliance on Density Functional Theory (DFT) and the need to explore a high-dimensional, complex energy (or Gibbs free energy) landscape.<br>
+                    
+                To overcome these challenges, we employ Machine Learning Interatomic Potentials (MLIPs) in combination with random search algorithms to efficiently explore the energy landscape of materials. MLIP models (such as MACE and M3GNet) offer a high degree of accuracy compared to DFT while significantly reducing computational cost. This enables the exploration of polymorphism in a wide range of systems, from simple inorganic compounds to complex molecular crystals.<br>
+                The github repository to PyMCSP (our code) can be found 
                 <b><u><a href="https://github.com/polbeni/PyMCSP" style="color:black; text-decoration:none;">here</a></u></b>.</p>
                 <img src="images/csp-research.png" alt="Schematic representation of PyMCSP" width=700 class="imageresearch">
                 
